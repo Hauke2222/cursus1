@@ -65,8 +65,10 @@
                 <input
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="name"
+                  name="name"
                   type="text"
                   placeholder="Vul uw naam in"
+                  required
                 />
               </div>
           
@@ -79,6 +81,7 @@
                   id="datepicker"
                   name="datepicker"
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  required
                 />
               </div>
           
@@ -89,8 +92,10 @@
                 <input
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="Vul uw e-mailadres in"
+                  required
                 />
               </div>
           
@@ -102,6 +107,7 @@
                   id="fruit"
                   name="fruit"
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  required
                 >
                   <option value="apple">Appel</option>
                   <option value="banana">Banaan</option>
@@ -114,14 +120,17 @@
                   Bericht:
                 </label>
                 <textarea
+                  required
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="message"
+                  name="message"
                   placeholder="Typ hier uw bericht"
                 ></textarea>
               </div>
           
               <div class="flex items-center justify-center">
                 <button
+                type="submit"
                   class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                   type="button"
                 >
