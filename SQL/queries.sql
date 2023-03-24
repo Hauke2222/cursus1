@@ -55,4 +55,4 @@ VALUES ('ABC123', 'Apple', 'fruit', 10.00, 20.00, 5, 10, 'Each', 0, 5, 'Food');
 
 -- 12. Insert an employee.
 INSERT INTO employees (company, last_name, first_name, email_address, job_title, business_phone, home_phone, mobile_phone, fax_number, address, city, state_province, zip_postal_code, country_region, web_page, notes, attachments)
-VALUES ('ABC Company', 'Doe', 'John', 'johndoe@email.com', 'Manager', '555-1234', '555-5678', '555-9012', '555-3456', '123 Main St', 'Anytown', 'AnyState', '12345', 'USA', 'http://www.johndoe.com', 'Some notes about John Doe', NULL);
+VALUES ('ABC Company', 'Doe', 'John', 'johndoe@email.com', 'Programmer', '555-1234', '555-5678', '555-9012', '555-3456', '123 Main St', 'Wichita Falls', 'Texas', '12345', 'USA', 'http://www.johndoe.com', 'Some notes about John Doe', NULL);
