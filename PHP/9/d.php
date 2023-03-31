@@ -3,9 +3,9 @@ require_once('pdo.php');
 
 $stmt = $pdo->query(
     'SELECT it.product_id, 
-    SUM(it.quantity) AS inkoop_totaal, 
-    SUM(od.quantity) AS verkoop_totaal,
-    SUM(it.quantity) - SUM(od.quantity) AS tekort
+    CAST(SUM(it.quantity) AS UNSIGNED) AS inkoop_totaal, 
+    CAST(SUM(od.quantity) AS UNSIGNED) AS verkoop_totaal,
+    CAST(SUM(it.quantity) - SUM(od.quantity) AS SIGNED) AS tekort
 FROM inventory_transactions it
 INNER JOIN order_details od
 ON it.product_id = od.product_id
